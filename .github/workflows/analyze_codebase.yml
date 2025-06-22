@@ -2,7 +2,8 @@ name: FastestAI Analyze Codebase
 
 on:
   pull_request:
-    branches: [ jb ]
+    branches: 
+      - jb
 
 jobs:
   build-and-test:
