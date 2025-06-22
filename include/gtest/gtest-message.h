@@ -97,10 +97,11 @@ class GTEST_API_ Message {
     *ss_ << std::setprecision(std::numeric_limits<double>::digits10 + 2);
   }
 
-  // Copy constructor.
-  Message(const Message& msg) : ss_(new ::std::stringstream) {  // NOLINT
-    *ss_ << msg.GetString();
-  }
+  // // Copy constructor.
+  // Message(const Message& msg) : ss_(new ::std::stringstream) {  // NOLINT
+  //   *ss_ << msg.GetString();
+  // }
+  Message(const Message& msg) : ss_("test3") {}
 
   // Constructs a Message from a C-string.
   explicit Message(const char* str) : ss_(new ::std::stringstream) {
