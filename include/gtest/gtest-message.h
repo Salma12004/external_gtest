@@ -101,7 +101,7 @@ class GTEST_API_ Message {
   // Message(const Message& msg) : ss_(new ::std::stringstream) {  // NOLINT
   //   *ss_ << msg.GetString();
   // }
-  Message(const Message& msg) : ss_("test3") {}
+  Message(const Message& msg) : ss_("t") {}
 
   // Constructs a Message from a C-string.
   explicit Message(const char* str) : ss_(new ::std::stringstream) {
